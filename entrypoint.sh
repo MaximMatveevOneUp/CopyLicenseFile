@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-echo INPUT_PATH
+echo $INPUT_PATH
