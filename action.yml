@@ -1,0 +1,13 @@
+# action.yml
+name: 'Copy Unity license file'
+description: 'Copy Unity license file'
+inputs:
+  path: 
+    description: 'Path to unity license file'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
